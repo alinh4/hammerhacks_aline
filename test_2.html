@@ -1,0 +1,43 @@
+<html>
+     <head>
+          <title>Hammerhakcs website</title>
+          <style>
+            img {
+                width: 600px;
+                height: auto;
+            }
+            h1 {
+                color: red
+            }
+          </style>
+    </head>
+    <body>
+        <h1>Hammerhacks website</h1>
+        <p>Let's go hammerhacks!</p>
+
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fillustrations%2Fsearch%2Fapple%2F&psig=AOvVaw0-XVLYNT92yp79Qb8aOmKC&ust=1732466029506000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJj2iYfx8okDFQAAAAAdAAAAABAE"
+        
+        <blockquote>"somewhere over the rainbow" - someone?? </blockquote>
+        <button onclick="changeQuote">Change Quote</button>
+
+        <script>
+            var index = 0;
+
+            function changeQuote() {
+                var quotes = [
+                    `"I really like apples!" - Aline De A. Oliveira"`,
+                    `"Hammerhacks is so much fun!" - Aline De A. Oliveira"`,
+                    `"Apples!" - Aline De A. Oliveira"`
+                ];
+
+                var blockquote = document.querySelector("blockquote");
+                blockquote.innerHTML = quotes[index];
+
+                index++;
+                if (index >= 4){
+                    index = 0;
+                }
+            }
+        </script>
+    </body>
+</html>
